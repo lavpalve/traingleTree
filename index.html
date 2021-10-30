@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pyramid_traingleOvelap</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to right, rgb(179, 16, 125), rgb(103, 15, 185));
+            }
+            .contentBox{
+                width: 50%;
+                height: 80vh;
+                margin: auto;
+                margin-top: 10vh;
+                box-shadow: 0 0 20px #aaa;
+                background-color: rgb(172, 211, 218);
+
+            }
+            .traingle{
+                width: 0;
+                height: 0;
+                margin: auto;
+                border: 150px solid rgb(172, 211, 218);
+                border-top: 150px solid transparent;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+                border-bottom: 150px solid green;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+            #traingle2{
+                border-bottom: 150px solid rgb(17, 221, 27);
+                position: absolute;
+                left: 39%;
+                top: 0%;
+
+            }
+            #traingle3{
+                border-bottom: 150px solid rgb(16, 156, 109);
+                position: absolute;
+                left: 39%;
+                top: -10%;
+
+            }
+            .vBase{
+                height: 50px;
+                width: 10px;
+                background-color: rgb(85, 40, 8);
+                margin: auto;
+            }
+            .hBase{
+                height: 10px;
+                width: 100px;
+                background-color: rgb(85, 40, 8);
+                margin: auto;
+            }
+
+            #traingle1:hover{
+                border-bottom: 150px solid rgb(16, 156, 109);
+            }
+            #traingle2:hover{
+                border-bottom: 150px solid rgb(0, 255, 0);
+            }
+            #traingle3:hover{
+                border-bottom: 150px solid green;
+            }
+            .contentBox:hover{
+                transform: rotateX(20);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contentBox">
+            <div id="traingle1" class="traingle"></div>
+            <div id="traingle2" class="traingle"></div>
+            <div id="traingle3" class="traingle"></div>
+            <div class="vBase"></div>
+            <div class="hBase"></div>
+        </div>
+    </body>
+</html>
